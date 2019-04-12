@@ -2,11 +2,7 @@
 import sys
 
 def main():
-    assert is_nice_string('qjhvhtzxzqqjkmpb') == True
-    assert is_nice_string('xxyxx') == True
-    assert is_nice_string('aaaaaaaaa') == True
-    assert is_nice_string('uurcxstgmygtbstg') == False
-    assert is_nice_string('ieodomkazucvgmuy') == False
+    run_tests()
 
     file = open(sys.argv[1], 'r')
     count = 0
@@ -33,6 +29,13 @@ def is_nice_string(string):
         if has_repeat_letter and has_non_overlapping_pairs:
             return True
     return False
+
+def run_tests():
+    assert is_nice_string('qjhvhtzxzqqjkmpb') == True
+    assert is_nice_string('xxyxx') == True
+    assert is_nice_string('aaaaaaaaa') == True
+    assert is_nice_string('uurcxstgmygtbstg') == False
+    assert is_nice_string('ieodomkazucvgmuy') == False
 
 if __name__ == "__main__":
     main()
