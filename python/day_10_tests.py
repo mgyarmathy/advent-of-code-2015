@@ -6,7 +6,7 @@
 # 1211 becomes 111221 (one 1, one 2, and two 1s).
 # 111221 becomes 312211 (three 1s, two 2s, and one 1).
 
-from day_10_1 import encode, decode
+from day_10_x import encode, decode
 import unittest
 
 class Day10Tests(unittest.TestCase):
